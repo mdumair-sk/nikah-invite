@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikah Ceremony | Umair & Ariba</title>
+    
+    <!-- Open Graph / Social Media Preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Nikah Ceremony | Umair & Ariba" />
+    <meta property="og:description" content="You are cordially invited to the Nikah ceremony of Umair and Ariba on Friday, March 27, 2026." />
+    <!-- Placeholder image URL -->
+    <meta property="og:image" content="https://placehold.co/1200x630/0D5C4B/F5E6A3?text=Umair+%26+Ariba+Nikah" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Cormorant+SC:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Beau+Rivage&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --emerald: #7D2B4A;
+            --emerald-dark: #5A1E35;
+            --emerald-light: #B05070;
+            --gold: #C9956E;
+            --gold-light: #D8A882;
+            --gold-pale: #FFF0F3;
+            --cream: #FFF0F3;
+            --cream-dark: #FADADD;
+            --text-dark: #4A1A2C;
+            --text-body: #4A1A2C;
+            --text-muted: #7D3A52;
+            --text-faint: #A8607A;
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'EB Garamond', serif;
+            font-size: 16px;
+            background:
+                radial-gradient(ellipse 80% 60% at 10% 10%, rgba(125,43,74,0.08) 0%, transparent 100%),
+                radial-gradient(ellipse 80% 60% at 90% 90%, rgba(125,43,74,0.06) 0%, transparent 100%),
+                radial-gradient(ellipse 40% 40% at 50% 50%, rgba(201,149,110,0.04) 0%, transparent 100%),
+                linear-gradient(180deg, #FFF0F3 0%, #FADADD 50%, #F2C8CE 100%);
+            padding: clamp(16px, 4vw, 32px) clamp(12px, 3vw, 20px);
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='120' height='160' viewBox='0 0 120 160' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- lantern body --%3E%3Cellipse cx='60' cy='90' rx='14' ry='20' fill='none' stroke='rgba(125%2C43%2C74%2C0.07)' stroke-width='1'/%3E%3C!-- top cap --%3E%3Crect x='53' y='68' width='14' height='4' rx='2' fill='none' stroke='rgba(125%2C43%2C74%2C0.07)' stroke-width='1'/%3E%3C!-- bottom cap --%3E%3Crect x='53' y='108' width='14' height='4' rx='2' fill='none' stroke='rgba(125%2C43%2C74%2C0.07)' stroke-width='1'/%3E%3C!-- ribs --%3E%3Cline x1='50' y1='74' x2='49' y2='108' stroke='rgba(125%2C43%2C74%2C0.04)' stroke-width='0.7'/%3E%3Cline x1='60' y1='70' x2='60' y2='112' stroke='rgba(125%2C43%2C74%2C0.04)' stroke-width='0.7'/%3E%3Cline x1='70' y1='74' x2='71' y2='108' stroke='rgba(125%2C43%2C74%2C0.04)' stroke-width='0.7'/%3E%3C!-- string --%3E%3Cline x1='60' y1='55' x2='60' y2='68' stroke='rgba(201%2C149%2C110%2C0.08)' stroke-width='0.8'/%3E%3C!-- crescent --%3E%3Ccircle cx='20' cy='30' r='10' fill='none' stroke='rgba(201%2C149%2C110%2C0.08)' stroke-width='0.8'/%3E%3Ccircle cx='23' cy='28' r='8' fill='%23FADADD' opacity='0.6'/%3E%3C!-- star --%3E%3Cpath d='M98 20 L99.2 24 L103 24 L100 26.5 L101.2 30 L98 28 L94.8 30 L96 26.5 L93 24 L96.8 24 Z' fill='none' stroke='rgba(201%2C149%2C110%2C0.09)' stroke-width='0.7'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .particles { position: fixed; inset: 0; pointer-events: none; z-index: 1; overflow: hidden; }
+        .particle { position: absolute; opacity: 0; animation: floatUp linear infinite; }
+        @keyframes floatUp {
+            0% { opacity: 0; transform: translateY(100vh) rotate(0deg) scale(0.8); }
+            10% { opacity: 0.6; }
+            90% { opacity: 0.3; }
+            100% { opacity: 0; transform: translateY(-20px) rotate(360deg) scale(1); }
+        }
+
+        .card {
+            position: relative;
+            z-index: 10;
+            max-width: 580px;
+            width: 100%;
+            background: linear-gradient(175deg, rgba(255,255,255,0.95) 0%, rgba(255,240,243,0.98) 100%);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow:
+                0 0 0 1px rgba(125,43,74,0.15),
+                0 0 0 4px rgba(201,149,110,0.12),
+                0 25px 80px rgba(125,43,74,0.12),
+                inset 0 1px 0 rgba(255,255,255,0.95);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: cardReveal 1.2s cubic-bezier(0.22,1,0.36,1) 0.1s forwards;
+        }
+        @keyframes cardReveal { to { opacity: 1; transform: translateY(0); } }
+
+        .arch-border {
+            position: absolute;
+            inset: 10px;
+            border: 1px solid rgba(125,43,74,0.12);
+            border-radius: 200px 200px 8px 8px;
+            pointer-events: none;
+        }
+        .arch-border-inner {
+            position: absolute;
+            inset: 14px;
+            border: 0.5px solid rgba(201,149,110,0.15);
+            border-radius: 190px 190px 6px 6px;
+            pointer-events: none;
+        }
+
+        .card-header {
+            position: relative;
+            padding: clamp(30px, 5vw, 45px) clamp(25px, 5vw, 40px) 0;
+            text-align: center;
+        }
+
+        .moon-ornament { display: flex; justify-content: center; margin-bottom: 16px; }
+        .moon-icon { width: 50px; height: 50px; color: var(--gold); }
+
+        .bismillah-arabic {
+            font-family: 'Scheherazade New', serif;
+            font-size: clamp(1.8rem, 5vw, 2.4rem);
+            font-weight: 700;
+            color: var(--emerald);
+            line-height: 1.6;
+            direction: rtl;
+        }
+
+        .bismillah-english {
+            font-family: 'EB Garamond', serif;
+            font-size: clamp(0.75rem, 1.8vw, 0.88rem);
+            color: var(--text-faint);
+            font-style: italic;
+        }
+
+        .card-body {
+            padding: clamp(20px, 4vw, 35px) clamp(25px, 5vw, 45px);
+            text-align: center;
+            position: relative;
+        }
+
+        .divider { display: flex; align-items: center; justify-content: center; gap: 12px; margin: clamp(18px, 3vw, 28px) 0; opacity: 0; animation: fadeIn 0.7s ease-out forwards; }
+        .d1 { animation-delay: 0.5s; }
+        .d2 { animation-delay: 0.9s; }
+        .d3 { animation-delay: 1.3s; }
+        .div-line { width: 50px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+        .div-diamond { width: 8px; height: 8px; background: var(--gold); transform: rotate(45deg); }
+        .div-star { width: 6px; height: 6px; background: var(--gold-light); clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+
+        @keyframes fadeIn { to { opacity: 1; } }
+        @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+        .anim { opacity: 0; animation: fadeUp 0.8s ease-out forwards; }
+
+        .host-label { font-family: 'EB Garamond', serif; font-size: clamp(0.72rem, 1.6vw, 0.82rem); color: var(--text-faint); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 10px; font-style: italic; }
+        .host-name { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.15rem, 2.8vw, 1.35rem); color: var(--emerald); font-weight: 500; letter-spacing: 0.5px; }
+
+        .event-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.6rem, 4.5vw, 2.2rem); color: var(--emerald); font-weight: 300; letter-spacing: 6px; text-transform: uppercase; margin-bottom: 8px; }
+        .event-subtitle { font-family: 'EB Garamond', serif; font-size: clamp(0.9rem, 2.2vw, 1.05rem); color: var(--text-muted); font-style: italic; }
+
+        .couple-names { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 10px; width: 100%; overflow: hidden; }
+        .couple-name { font-family: 'Beau Rivage', cursive; font-size: clamp(2.8rem, 15vw, 5.5rem); color: var(--emerald); line-height: 1.1; text-shadow: 2px 3px 14px rgba(125,43,74,0.15); }
+        .ampersand { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 4.5vw, 2.4rem); color: var(--gold); padding-top: 14px; font-style: italic; font-weight: 300; }
+
+        .details-grid { display: grid; grid-template-columns: 1fr 1px 1fr 1px 1fr; gap: 4px; margin-top: 20px; }
+        .detail-sep { background: linear-gradient(180deg, transparent, rgba(125,43,74,0.2), transparent); width: 1px; }
+        .detail-label { font-family: 'Cormorant SC', serif; font-size: 0.7rem; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; font-weight: 600; }
+        .detail-value { font-family: 'EB Garamond', serif; font-size: clamp(0.9rem, 2vw, 1rem); color: var(--text-dark); line-height: 1.5; }
+        .venue-name { display: block; color: var(--emerald); font-weight: 500; font-size: 0.95rem; font-family: 'Cormorant Garamond', serif; }
+        .venue-sub { display: block; font-size: 0.82rem; color: var(--text-muted); font-family: 'EB Garamond', serif; font-style: italic; }
+
+        .islamic-quote { font-family: 'Scheherazade New', serif; font-size: 1.15rem; color: var(--emerald); direction: rtl; margin-bottom: 8px; }
+        .islamic-quote-translation { font-family: 'EB Garamond', serif; font-size: 0.92rem; color: var(--text-muted); font-style: italic; max-width: 340px; margin: 0 auto; line-height: 1.6; }
+
+        .action-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 32px; opacity: 0; animation: fadeIn 0.8s ease-out 1.5s forwards; }
+        .btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 24px; font-family: 'Cormorant SC', serif; font-size: 0.82rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none; border-radius: 4px; cursor: pointer; transition: 0.3s; border: none; }
+        .btn-primary { background: var(--emerald); color: var(--gold-pale); box-shadow: 0 4px 15px rgba(125,43,74,0.2); }
+        .btn-secondary { background: transparent; color: var(--emerald); border: 1.5px solid var(--gold); }
+        .btn:hover { transform: translateY(-2px); filter: brightness(1.1); }
+        .btn svg { width: 16px; height: 16px; }
+
+        @media (max-width: 520px) {
+            .details-grid { grid-template-columns: 1fr; }
+            .detail-sep { display: none; }
+            .detail-col { padding: 12px 0; border-bottom: 1px solid rgba(125,43,74,0.1); }
+            .detail-col:last-child { border-bottom: none; }
+        }
+        .venue-link { display:flex; align-items:center; gap:12px; padding:15px; border:1px solid #eee; border-radius:6px; text-decoration:none; margin-bottom:12px; transition: background 0.2s, border-color 0.2s, transform 0.2s; }
+        .venue-link:last-child { margin-bottom: 0; }
+        .venue-link:hover { background: rgba(125,43,74,0.05); border-color: rgba(125,43,74,0.2); transform: translateY(-2px); }
+    </style>
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    <div class="particles" id="particles" aria-hidden="true"></div>
+
+    <div class="card" role="main">
+        <div class="arch-border" aria-hidden="true"></div>
+        <div class="arch-border-inner" aria-hidden="true"></div>
+
+        <header class="card-header">
+            <div class="moon-ornament">
+                <span style="
+                    font-size: 3.8rem;
+                    color: var(--emerald);
+                    filter: drop-shadow(0 3px 10px rgba(125,43,74,0.35));
+                    display: inline-block;
+                    line-height: 1;
+                ">☪</span>
+            </div>
+            <div class="bismillah-arabic" lang="ar">بسم الله الرحمن الرحيم</div>
+            <div class="bismillah-english">In the name of Allah, Most Gracious, Most Merciful</div>
+        </header>
+
+        <div class="card-body">
+            <div class="divider d1" aria-hidden="true">
+                <span class="div-star"></span><span class="div-line"></span><span class="div-diamond"></span><span class="div-line"></span><span class="div-star"></span>
+            </div>
+
+            <!-- Introductory Subtitle -->
+            <p class="anim event-subtitle" style="animation-delay:0.5s; padding-bottom: 12px;">You are cordially invited to the</p>
+            
+            <!-- Nikah Heading with Top Padding -->
+            <h1 class="anim event-title" style="animation-delay:0.6s; padding-top: 10px;">Nikah</h1>
+            
+            <p class="anim event-subtitle" style="animation-delay:0.7s;">of</p>
+
+            <div class="anim couple-section" style="animation-delay:0.8s;">
+                <div class="couple-names">
+                    <span class="couple-name">Umair</span>
+                    <span class="ampersand" aria-label="and">&</span>
+                    <span class="couple-name">Ariba</span>
+                </div>
+            </div>
+
+            <div class="divider d2" aria-hidden="true">
+                <span class="div-diamond"></span>
+            </div>
+
+            <div class="anim host-section" style="animation-delay:1s;">
+                <div class="host-label">In the presence of</div>
+                <div class="host-name">Mohammed Ilyas Sahab</div>
+            </div>
+
+            <div class="divider d3" aria-hidden="true">
+                <span class="div-star"></span><span class="div-line"></span><span class="div-diamond"></span><span class="div-line"></span><span class="div-star"></span>
+            </div>
+
+            <div class="anim event-details" style="animation-delay:1.2s;">
+                <div class="details-grid">
+                    <div class="detail-col">
+                        <div class="detail-label">Date</div>
+                        <div class="detail-value">Friday<br/>March 27, 2026</div>
+                    </div>
+                    <div class="detail-sep"></div>
+                    <div class="detail-col">
+                        <div class="detail-label">Ceremony</div>
+                        <div class="detail-value">After Asr Namaz<br/>
+                            <span class="venue-name">Jama Masjid</span>
+                            <span class="venue-sub">Mominpura, Nagpur</span>
+                        </div>
+                    </div>
+                    <div class="detail-sep"></div>
+                    <div class="detail-col">
+                        <div class="detail-label">Dinner</div>
+                        <div class="detail-value">8:00 PM onwards<br/>
+                            <span class="venue-name">Shahzadi Lawn</span>
+                            <span class="venue-sub">Nagpur</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="anim" style="margin-top: 30px; animation-delay: 1.4s;">
+                <div class="islamic-quote" lang="ar">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا</div>
+                <p class="islamic-quote-translation">"And among His signs is that He created for you mates from among yourselves, that you may dwell in tranquility with them"</p>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn btn-primary" onclick="addToCalendar()" aria-label="Add this event to your Google Calendar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    Save Date
+                </button>
+                <button class="btn btn-secondary" onclick="showVenuePicker()" aria-label="View location of masjid or dinner lawn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Locations
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Venue Picker Modal -->
+    <div id="venueModal" style="display:none; position:fixed; inset:0; z-index:100; background:rgba(90,30,53,0); backdrop-filter:blur(0px); align-items:center; justify-content:center; padding:20px; transition: 0.3s;" onclick="closeVenuePicker(event)">
+        <div id="venueModalCard" style="background:#fff; border-radius:8px; padding:30px; max-width:340px; width:100%; text-align:center; box-shadow:0 20px 50px rgba(0,0,0,0.3); opacity:0; transform:translateY(20px); transition: 0.3s; position:relative;" onclick="event.stopPropagation()">
+            <button onclick="closeVenuePicker()" aria-label="Close" style="position:absolute; top:10px; right:15px; background:none; border:none; cursor:pointer; font-size:1.2rem; color:#888;">✕</button>
+            <div style="font-family:'Cormorant SC',serif; font-size:0.72rem; color:var(--gold); margin-bottom:20px; letter-spacing:2px;">Get Directions</div>
+            
+            <a href="https://maps.app.goo.gl/tvuswZiAu7yyWnmz8" target="_blank" class="venue-link">
+                <div style="background:var(--emerald); width:32px; height:32px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; flex-shrink:0;">M</div>
+                <div style="text-align:left;">
+                    <div style="font-weight:600; font-size:0.85rem; color:var(--emerald);">Jama Masjid</div>
+                    <div style="font-size:0.75rem; color:#666;">Mominpura (Nikah)</div>
+                </div>
+            </a>
+
+            <a href="https://maps.app.goo.gl/98ZBQVW5bm5XrENt7" target="_blank" class="venue-link">
+                <div style="background:var(--gold); width:32px; height:32px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; flex-shrink:0;">S</div>
+                <div style="text-align:left;">
+                    <div style="font-weight:600; font-size:0.85rem; color:var(--emerald);">Shahzadi Lawn</div>
+                    <div style="font-size:0.75rem; color:#666;">Gandhibagh (Dinner)</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            const container = document.getElementById('particles');
+            const colors = ['rgba(201,149,110,0.3)', 'rgba(125,43,74,0.1)'];
+            for (let i = 0; i < 20; i++) {
+                const p = document.createElement('div');
+                p.className = 'particle';
+                p.style.left = Math.random() * 100 + '%';
+                p.style.width = '4px'; p.style.height = '4px';
+                p.style.background = colors[i % 2];
+                p.style.animationDelay = Math.random() * 10 + 's';
+                p.style.animationDuration = (10 + Math.random() * 10) + 's';
+                container.appendChild(p);
+            }
+        })();
+
+        function showVenuePicker() {
+            const m = document.getElementById('venueModal');
+            const c = document.getElementById('venueModalCard');
+            m.style.display = 'flex';
+            setTimeout(() => {
+                m.style.background = 'rgba(90,30,53,0.6)';
+                m.style.backdropFilter = 'blur(4px)';
+                c.style.opacity = '1';
+                c.style.transform = 'translateY(0)';
+            }, 10);
+        }
+
+        function closeVenuePicker() {
+            const m = document.getElementById('venueModal');
+            const c = document.getElementById('venueModalCard');
+            m.style.background = 'rgba(90,30,53,0)';
+            m.style.backdropFilter = 'blur(0px)';
+            c.style.opacity = '0';
+            c.style.transform = 'translateY(20px)';
+            setTimeout(() => m.style.display = 'none', 300);
+        }
+
+        function addToCalendar() {
+            const ev = {
+                title: 'Nikah Ceremony - Umair & Ariba',
+                detail: "Nikah after Asr Namaz at Jama Masjid Mominpura, followed by Dinner at Shahzadi Lawn. Your presence is requested.",
+                loc: 'Jama Masjid Mominpura, Nagpur',
+                start: '20260327T170000', // 5:00 PM
+                end: '20260327T220000',   // 10:00 PM
+            };
+            const url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(ev.title)}&dates=${ev.start}/${ev.end}&details=${encodeURIComponent(ev.detail)}&location=${encodeURIComponent(ev.loc)}&sf=true&output=xml`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
+
